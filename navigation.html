@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="nav-items" id="navbar">
+          <div class="inner-container">
+            <img src="img.png" alt="image" style="width: 50px" />
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#info">Info</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <h1 style="text-align: center">Welcome to my Portfolio</h1>
+    </section>
+    <section id="about">
+      <div class="float">
+        <img src="image.jpg" alt="profile-image" id="profile" />
+        <div class="about">
+          <h1>About</h1>
+          <p>
+            Hello! I'm Aniket, a passionate web developer with a flair for
+            creativity and a keen eye for detail. With a background in computer
+            science and years of hands-on experience, I specialize in crafting
+            stunning and functional websites that leave a lasting impression. My
+            journey in web development began with a fascination for the
+            limitless possibilities of the digital world, and since then, I've
+            been dedicated to honing my skills and staying updated with the
+            latest trends and technologies in the field. Whether it's building
+            responsive layouts, optimizing for performance, or incorporating
+            captivating visuals, I thrive on turning ideas into reality and
+            delivering exceptional results. Let's collaborate and bring your
+            vision to life!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="info">
+      <div>
+        <h1>Skills</h1>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JAVASCRIPT</li>
+          <li>JAVA</li>
+          <li>PYTHON</li>
+        </ul>
+      </div>
+      <div id="project">
+        <h1>Projects</h1>
+        <ol>
+          <li>Food Ordering Website (Master of Computer Application).</li>
+          <ul>
+            <li>Technology used : HTML,CSS, PHP, JavaScript</li>
+            <li>
+              Online Test Application is a project developed to provide an easy
+              way to develop student`s skills. This project helps users by
+              analysing the areas where students are weak and allows tests
+              accordingly.
+            </li>
+          </ul>
+          <li>Online Test Application (Bachelor of Computer Application).</li>
+          <ul>
+            <li>Technology used : HTML,CSS,JavaScript, bootstrap</li>
+            <li>
+              Food Ordering Website is a convenient platform for users to browse
+              through various food options, select items they want to order, and
+              place their orders online.
+            </li>
+            <li>
+              Project has other pages like all payment gateway and categories of
+              food items.
+            </li>
+          </ul>
+        </ol>
+      </div>
+    </section>
+    <section id="services">
+      <div>
+        <h1>Services</h1>
+        <ul>
+          <li>Web Development</li>
+          <li>Responsive Design</li>
+          <li>UI/UX Design</li>
+          <li>SEO Optimization</li>
+          <li>Frontend Development</li>
+        </ul>
+      </div>
+    </section>
+    <section id="contact">
+      <h1>Contact</h1>
+      <ul>
+        <li>Phone: 8797093230</li>
+        <li>
+          Email:
+          <a href="mailto:aniketraj786fb2@gmail.com" id="mail"
+            >aniketraj786fb2@gmail.com</a
+          >
+        </li>
+      </ul>
+    </section>
+    <script>
+      // script.js
+      document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener("scroll", function () {
+          const navbar = document.getElementById("navbar");
+          if (window.scrollY > 50) {
+            // Adjust the value as needed
+            navbar.classList.add("scrolled");
+          } else {
+            navbar.classList.remove("scrolled");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
